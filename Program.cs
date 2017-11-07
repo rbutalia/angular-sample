@@ -22,10 +22,10 @@ namespace aspnet_angular_sample
         
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseConfiguration(new ConfigurationBuilder()
-                            .SetBasePath(Directory.GetCurrentDirectory())
-                            .AddJsonFile("hosting.json", optional:true)
-                            .Build())
+                // .UseConfiguration(new ConfigurationBuilder()
+                //             .SetBasePath(Directory.GetCurrentDirectory())
+                //             .AddJsonFile("hosting.json", optional:true)
+                //             .Build())
                 .Build();
     }
 }
